@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&family=Philosopher:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a044e42615.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="boat.css">
+</head>
+
+<body>
+    <script src="boatclub.js"></script>
+    <div id="nav-placeholder"></div>
+    <div class="homebg">
+        <div class="cover">
+            <h1>Join today to </h1>
+            <h3>Experience the thrill of boating</h3>
+            <p>This will give you access to a variety of boats, as well as lessons and other resources to help you learn the ropes.</p>
+        </div>
+    </div>
+    <div class="section1">
+        <div class="hometext">
+            <h2>The modern and new way of boating</h2>
+            <p>Our boat club is an organization that provides the members with access of bboat,docks and launch ramps etc. Boat clubs typically own and maintain a fleet of boats,which members can use for recreational,competitive or educational purpose.Overall Boat clubs provide a great way for members to meet with others.</p>
+        </div>
+    </div>
+
+    <div id='slider'>
+        <figure>
+            <img src="images/slide1.jpg">
+            <img src="images/slide2.jpg">
+            <img src="images/slide3.jpg">
+            <img src="images/slide4.jpg">
+        </figure>
+    </div>
+    <div class="section2">
+        <div class="s2row1">
+            <div class="col1">
+                <h2>Membership boating</h2>
+                <p>Our club maintain the yearly membership system. The cost of a yearly membership at a boat club will vary depending on the club and the services offered. Contact us to know the current membership cost. Hope it will more comfortable to to purchase your plan.</p>
+            </div>
+            <div class="col2">
+                <img src="images/member.jpg" alt="boat">
+            </div>
+        </div>
+        <div class="s2row2">
+            <div class="col3">
+                <img src="images/share.jpg" alt="boat">
+            </div>
+            <div class="col4">
+                <h2>Club History</h2>
+                <p>The history and reputation of a boat club can vary greatly depending on where the club is located and which type of boat it specializes in. Generally, boat clubs have been around for centuries and have a long history of providing access to recreational boating activities.In addition, clubs may be affiliated with certain sailing organizations, such as the American Sailing Association, or have their own unique culture. </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Contact us</h1>
+        <p>Thank you for your inquiry. <br> Please contact us <br>+8801608200179<br> or <br> <a href="md.parves2002@gmail.com">md.parves2002@gmail.com</a> <br> for more information.</p>
+        <div class="icon2">
+          <a href="https://www.facebook.com/profile.php?id=100015476678056"><i class="fa fa-brands fa-facebook" link></i></a>
+          <a href="https://twitter.com/zaman_parves"><i class="fa fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/md-parves-zaman-1060b6245/"><i class="fa fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/md_parves_zaman/"><i class="fa fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
+  </script>
+
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+  </script>
+</html>
